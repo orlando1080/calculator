@@ -32,7 +32,7 @@ color: #EDAEC0;
 	/* border: 2px solid; */
 }
 
-.button-row div {
+button {
 	flex-basis: 100%;
 	width: 25%;
 	border: 1px solid;
@@ -56,4 +56,19 @@ color: #EDAEC0;
 
 #operator-buttons {
 	background-color: #7A687F;
+}
+
+button:hover,
+#operator-buttons:hover,
+#equals-button:hover,
+#clear-button:hover {
+	background-color: darkgray;
+	transition: 0.7s;
+}
+
+button:active,
+#operator-buttons:active,
+#equals-button:active,
+#clear-button:active  {
+    background-color: whitesmoke;
 }
