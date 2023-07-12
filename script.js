@@ -77,12 +77,12 @@ function Calculator() {
 		operatorButtons.forEach((operatorButton) => {
 			operatorButton.addEventListener('click', () => {
 				document.getElementById('display').textContent += operatorButton.textContent;
-				cal.getCurrentOperator(operatorButton.textContent);
 				cal.opCount += 1;
 				if (cal.opCount == 2) {
 					document.getElementById('display').textContent = cal.operate().toString() + operatorButton.textContent;
 					cal.opCount = 1;
 				}
+				cal.getCurrentOperator(operatorButton.textContent);
 			});
 		});
 	};
